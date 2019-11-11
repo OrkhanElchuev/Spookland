@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public float playerSpeed;
     private Vector2 movingAmount;
     private Rigidbody2D playerRigidBody;
+    private Animator animator;
 
     private void Start()
     {
@@ -38,12 +39,22 @@ public class Player : MonoBehaviour
         Input.GetAxisRaw("Vertical"));
         // .normalized is used to avoid Increased speed while moving diagonally
         movingAmount = movementInput.normalized * playerSpeed;
+        // If player is moving execute running animation
+        if (movementInput != Vector2.zero)
+        {
+            animator.SetBool("IsRunning", true);
+        }
+        else
+        {
+            animator.SetBool("IsRunning", false);
+        }
     }
 
     // Assign relevant components
     private void AssigningComponents()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
 }
