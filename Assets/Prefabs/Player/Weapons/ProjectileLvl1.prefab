@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8369617724969248514}
   - component: {fileID: 6970751768233462583}
+  - component: {fileID: 2177377038100077273}
   m_Layer: 0
   m_Name: ProjectileLvl1
   m_TagString: Untagged
@@ -80,3 +81,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2177377038100077273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115949479827592810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f765a1c3ce7824795e812fdd465b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileLifeTime: 0.5
+  projectileSpeed: 20
+  explosion: {fileID: 7216029682732620884, guid: 56f83d26a4bcfc749b89f7de6c24a900,
+    type: 3}
