@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     public float projectileLifeTime;
     public float projectileSpeed;
     public GameObject explosion;
+    public int porjectileDamage;
 
     private void Start()
     {
@@ -17,6 +18,18 @@ public class Projectile : MonoBehaviour
     private void Update()
     {
         MoveProjectile();
+    }
+
+    // Handle collision with objects
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Check if item of collision is enemy
+        if (collision.tag == "Enemy")
+        {
+            // Deal damage to enemy
+            collision.GetComponent<Enemy>().TakeDamage(porjectileDamage);
+            DestroyProjectile();
+        }
     }
 
     private void MoveProjectile()
