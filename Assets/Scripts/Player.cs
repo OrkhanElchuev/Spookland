@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float playerSpeed;
+    public float playerHealth;
     private Vector2 movingAmount;
     private Rigidbody2D playerRigidBody;
     private Animator animator;
@@ -57,4 +58,13 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    // Handle damage and destroy player
+    public void TakeDamage(int damageAmount)
+    {
+        playerHealth -= damageAmount;
+        if (playerHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }

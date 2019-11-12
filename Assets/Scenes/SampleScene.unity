@@ -283,6 +283,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1738504133 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5565364463096619534, guid: f81780912d1a51f419e4c1faca39157a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7838278998754866368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1738504134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738504133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13baeffb84ee85e48b8b25a637822826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 3
+  enemySpeed: 30
+  periodBetweenAttacks: 3
+  damageAmount: 1
+  player: {fileID: 0}
+  stopDistance: 10
+  attackSpeed: 8
 --- !u!1001 &278323545249203687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -349,6 +374,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327670698941340497, guid: c03e46cd719731240a3bca28e1e80d3d,
+        type: 3}
+      propertyPath: playerSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327670698941340497, guid: c03e46cd719731240a3bca28e1e80d3d,
+        type: 3}
+      propertyPath: playerHealth
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c03e46cd719731240a3bca28e1e80d3d, type: 3}
@@ -506,7 +541,7 @@ PrefabInstance:
     - target: {fileID: 5565364463096619534, guid: f81780912d1a51f419e4c1faca39157a,
         type: 3}
       propertyPath: m_Name
-      value: EnemyLvl1
+      value: FighterEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 7887292076496073066, guid: f81780912d1a51f419e4c1faca39157a,
         type: 3}
@@ -563,7 +598,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1738504134, guid: f81780912d1a51f419e4c1faca39157a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f81780912d1a51f419e4c1faca39157a, type: 3}
 --- !u!4 &7838278998754866369 stripped
 Transform:
