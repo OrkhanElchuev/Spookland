@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    // Public
     public float projectileLifeTime;
     public float projectileSpeed;
     public GameObject explosion;

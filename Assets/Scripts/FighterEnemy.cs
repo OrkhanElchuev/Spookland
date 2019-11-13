@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class FighterEnemy : Enemy
 {
+    // Public
     public float stopDistance;
     public float attackSpeed;
+
+    // Private
     private float attackPeriod;
 
     private void Update()
@@ -29,9 +32,9 @@ public class FighterEnemy : Enemy
             {
                 if (Time.time >= attackPeriod)
                 {
+                    attackPeriod = Time.time + periodBetweenAttacks;
                     // Attack the player if distance allows to do so
                     StartCoroutine(Attack());
-                    attackPeriod = Time.time + periodBetweenAttacks;
                 }
             }
         }

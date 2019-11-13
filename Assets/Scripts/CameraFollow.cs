@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    // Public
     public Transform playerTransform;
     public float speed;
-
     public float minX;
     public float maxX;
     public float minY;

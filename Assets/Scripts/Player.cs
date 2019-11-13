@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    // Public
     public float playerSpeed;
     public float playerHealth;
-    private Vector2 movingAmount;
+
+    // Private
     private Rigidbody2D playerRigidBody;
     private Animator animator;
+    private Vector2 movingAmount;
+
 
     private void Start()
     {

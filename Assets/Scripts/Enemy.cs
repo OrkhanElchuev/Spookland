@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    // Public
     public int enemyHealth;
     public float enemySpeed;
     public float periodBetweenAttacks;
@@ -11,7 +12,7 @@ public class Enemy : MonoBehaviour
     [HideInInspector]
     public Transform player;
 
-    private void Start()
+    public virtual void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
