@@ -29,6 +29,16 @@ public class SummonerEnemy : Enemy
         summonerAnimation = GetComponent<Animator>();
     }
 
+    private void Update()
+    {
+        // Check if player exists
+        if (player != null)
+        {
+            MoveSummoner();
+            AttackingDistance();
+        }
+    }
+
     // Set random target position for summoner to settle 
     private void SetRandomTargetPos()
     {
@@ -39,20 +49,59 @@ public class SummonerEnemy : Enemy
         targetPosition = new Vector2(randomX, randomY);
     }
 
-    private void Update()
+    // Handle summoner movement
+    private void MoveSummoner()
     {
-      
+        // Check the distance between current position and generated target position
+        if (Vector2.Distance(transform.position, targetPosition) > 0.5f)
+        {
+            // If distance is big enough smoothly move towards target position
+            transform.position = Vector2.MoveTowards(transform.position,
+            targetPosition, enemySpeed * Time.deltaTime);
+            // Execute running animation
+            summonerAnimation.SetBool("IsRunning", true);
+        }
+        else
+        {
+            // If distance is smaller than 0.5 stop running animation
+            summonerAnimation.SetBool("IsRunning", false);
+            // Check if game time allows to summon a creature
+            if (Time.time >= summonPeriod)
+            {
+                summonPeriod = Time.time + periodBetweenSummons;
+                // Execute summoning animation
+                summonerAnimation.SetTrigger("Summon");
+            }
+        }
     }
 
+    // Handle attack distance 
+    private void AttackingDistance()
+    {
+        // Check the distance between summoner and player
+        if (Vector2.Distance(transform.position, player.position) < stopDistance)
+        {
+            if (Time.time >= attackPeriod)
+            {
+                attackPeriod = Time.time + periodBetweenAttacks;
+                // Attack the player if distance allows to do so
+                StartCoroutine(Attack());
+            }
+        }
+    }
+
+    // Summon enemy creature
     public void SummonCreature()
     {
+        // Check if player exists
         if (player != null)
         {
+            // Create creature in position of Summoner
             Instantiate(creatureToSummon, transform.position, transform.rotation);
         }
     }
 
-    // Handle enemy attack
+    // Handle summoner attack 
     IEnumerator Attack()
     {
         // Deal damage
@@ -71,8 +120,4 @@ public class SummonerEnemy : Enemy
             yield return null;
         }
     }
-
-
-
-
 }
