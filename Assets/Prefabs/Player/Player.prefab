@@ -117,6 +117,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.312939, y: 2.8647532}
   m_EdgeRadius: 0
+--- !u!114 &836261771585064849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4144542779844715298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ae11eb733450346abb44c6d3985ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1115949479827592810, guid: 379fd326e41079347aca451d9838250d,
+    type: 3}
+  shootingPoint: {fileID: 7316979838957067297}
+  periodBetweenShots: 0.5
 --- !u!1 &5964108293748250511
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,11 +380,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1834557865008245716, guid: 1f0edc9eb2f0f164b8cb5be74780902c,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8244126808748126764, guid: 1f0edc9eb2f0f164b8cb5be74780902c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1f0edc9eb2f0f164b8cb5be74780902c, type: 3}
+--- !u!1 &4144542779844715298 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5999449522640106176, guid: 1f0edc9eb2f0f164b8cb5be74780902c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7693850478028018146}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4144542779844715299 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5999449522640106177, guid: 1f0edc9eb2f0f164b8cb5be74780902c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7693850478028018146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7316979838957067297 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1102588454173101507, guid: 1f0edc9eb2f0f164b8cb5be74780902c,
     type: 3}
   m_PrefabInstance: {fileID: 7693850478028018146}
   m_PrefabAsset: {fileID: 0}
