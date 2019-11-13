@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5327670698941340497}
   - component: {fileID: 8053159013570474126}
   - component: {fileID: 608573455}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -68,7 +68,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85a4003ad47dc654c8b0b87e1da63876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 50
+  playerSpeed: 40
+  playerHealth: 5
 --- !u!50 &8053159013570474126
 Rigidbody2D:
   serializedVersion: 4
@@ -86,7 +87,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -160,7 +161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 879311969519960331}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShootingPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2810841952739055647}
   - component: {fileID: 3305529020039464333}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,6 +274,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Weapon1Lvl
       objectReference: {fileID: 0}
+    - target: {fileID: 416810295147153298, guid: 1f0edc9eb2f0f164b8cb5be74780902c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5327628255398586941, guid: 1f0edc9eb2f0f164b8cb5be74780902c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -328,6 +334,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1810598171100715408, guid: 1f0edc9eb2f0f164b8cb5be74780902c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1055527379931694960, guid: 1f0edc9eb2f0f164b8cb5be74780902c,
         type: 3}
       propertyPath: m_SortingOrder
@@ -364,6 +375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerShadow
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893070598990544432, guid: 8e9b19a1868aa4246bbd73afaf8901ca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6009734757373124740, guid: 8e9b19a1868aa4246bbd73afaf8901ca,
         type: 3}
