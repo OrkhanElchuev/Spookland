@@ -552,68 +552,40 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8565189035429265967, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
+    - target: {fileID: 5343980537636128492, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
         type: 3}
-      propertyPath: m_Color.r
-      value: 1
+      propertyPath: m_AnchoredPosition.x
+      value: 105
       objectReference: {fileID: 0}
-    - target: {fileID: 8565189035429265967, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
+    - target: {fileID: 2787009499486379025, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
         type: 3}
-      propertyPath: m_Color.g
-      value: 1
+      propertyPath: m_AnchoredPosition.x
+      value: 185
       objectReference: {fileID: 0}
-    - target: {fileID: 8565189035429265967, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
+    - target: {fileID: 3089696725602151513, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
         type: 3}
-      propertyPath: m_Color.b
-      value: 1
+      propertyPath: m_AnchoredPosition.x
+      value: 265
       objectReference: {fileID: 0}
-    - target: {fileID: 5129419044692653342, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
+    - target: {fileID: 4756697238381882646, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
         type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5129419044692653342, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5129419044692653342, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1232272118502086672, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1232272118502086672, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1232272118502086672, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4368905612395269544, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4368905612395269544, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4368905612395269544, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
+      propertyPath: m_AnchoredPosition.x
+      value: 345
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30dd4b1da8959924f9ceffbf8b7adcfb, type: 3}
+--- !u!114 &276669669355023527 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8715438902921927252, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
+    type: 3}
+  m_PrefabInstance: {fileID: 276669669355023526}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &278323545249203687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -703,9 +675,9 @@ PrefabInstance:
       objectReference: {fileID: 168940262}
     - target: {fileID: 5327670698941340497, guid: c03e46cd719731240a3bca28e1e80d3d,
         type: 3}
-      propertyPath: playerHealth
-      value: 4
-      objectReference: {fileID: 0}
+      propertyPath: hearts.Array.data[4]
+      value: 
+      objectReference: {fileID: 276669669355023527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c03e46cd719731240a3bca28e1e80d3d, type: 3}
 --- !u!4 &278323545249203688 stripped

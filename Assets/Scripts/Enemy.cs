@@ -11,8 +11,10 @@ public class Enemy : MonoBehaviour
     public int damageAmount;
     [HideInInspector]
     public Transform player;
-    public int pickUpChance;
+    public int weaponPickUpChance;
     public GameObject[] pickUps;
+    public int healthPickUpChance;
+    public GameObject healthPickUp;
 
     public virtual void Start()
     {
@@ -25,18 +27,36 @@ public class Enemy : MonoBehaviour
         enemyHealth -= damageAmount;
         if (enemyHealth <= 0)
         {
-            // Generate a random number between 0 and 100
-            int randomNum = Random.Range(0, 101);
-            // If random number is less than a chance
-            if (randomNum < pickUpChance)
-            {
-                // Generate random pick up among available pick ups
-                GameObject randomPickUp = pickUps[Random.Range(0, pickUps.Length)];
-                // Instantiate generated pick up
-                Instantiate(randomPickUp, transform.position, transform.rotation);
-            }
+            InstantiateWeaponPickUp();
+            InstantiateHealthPickUp();
             // Destroy Enemy object
             Destroy(this.gameObject);
+        }
+    }
+
+    private void InstantiateWeaponPickUp()
+    {
+        // Generate a random number between 0 and 100
+        int randomWeapon = Random.Range(0, 101);
+        // If random number is less than a chance
+        if (randomWeapon < weaponPickUpChance)
+        {
+            // Generate random pick up among available pick ups
+            GameObject randomPickUp = pickUps[Random.Range(0, pickUps.Length)];
+            // Instantiate generated pick up
+            Instantiate(randomPickUp, transform.position, transform.rotation);
+        }
+    }
+
+    private void InstantiateHealthPickUp()
+    {
+        // Generate a random number between 0 and 100
+        int randomHealth = Random.Range(0, 101);
+        // If random number is less than a chance
+        if (randomHealth < healthPickUpChance)
+        {
+            // Instantiate health pick up
+            Instantiate(healthPickUp, transform.position, transform.rotation);
         }
     }
 }

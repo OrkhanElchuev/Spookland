@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D playerRigidBody;
     private Animator animator;
     private Vector2 movingAmount;
+    private int maxHealth = 5;
 
 
     private void Start()
@@ -94,6 +95,23 @@ public class Player : MonoBehaviour
                 hearts[i].sprite = emptyHeart;
             }
         }
+    }
+
+    // Increment health points of Player
+    public void IncreaseHealth(int increaseAmount)
+    {
+        // Check if health can be increased
+        if (playerHealth + increaseAmount > maxHealth)
+        {
+            // if not then assign maximum health to current health
+            playerHealth = maxHealth;
+        }
+        else
+        {
+            // Otherwise increment
+            playerHealth += increaseAmount;
+        }
+        UpdateHealthUI(playerHealth);
     }
 
     // Change the weapon to newly picked one
