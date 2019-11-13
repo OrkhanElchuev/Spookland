@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     // Public
     public float playerSpeed;
-    public float playerHealth;
+    public int playerHealth;
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
+
 
     // Private
     private Rigidbody2D playerRigidBody;
@@ -66,9 +71,28 @@ public class Player : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         playerHealth -= damageAmount;
+        UpdateHealthUI(playerHealth);
         if (playerHealth <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+
+    // Handle health point modification in UI
+    void UpdateHealthUI(int currentHealth)
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < currentHealth)
+            {
+                // Set current health sprite to full heart
+                hearts[i].sprite = fullHeart;
+            }
+            else
+            {
+                // Set current health sprite to empty heart
+                hearts[i].sprite = emptyHeart;
+            }
         }
     }
 

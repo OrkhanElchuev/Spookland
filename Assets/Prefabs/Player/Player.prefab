@@ -69,7 +69,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 40
-  playerHealth: 5
+  playerHealth: 0
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fullHeart: {fileID: 7301986486887889524, guid: 80e4073ae6b90fe47b25ecaa312f5d3e,
+    type: 3}
+  emptyHeart: {fileID: 2123032796952160724, guid: 80e4073ae6b90fe47b25ecaa312f5d3e,
+    type: 3}
 --- !u!50 &8053159013570474126
 Rigidbody2D:
   serializedVersion: 4
@@ -385,8 +394,7 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8244126808748126764, guid: 1f0edc9eb2f0f164b8cb5be74780902c, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f0edc9eb2f0f164b8cb5be74780902c, type: 3}
 --- !u!1 &4144542779844715298 stripped
 GameObject:
