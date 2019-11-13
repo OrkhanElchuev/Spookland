@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour
     public int damageAmount;
     [HideInInspector]
     public Transform player;
+    public int pickUpChance;
+    public GameObject[] pickUps;
 
     public virtual void Start()
     {
@@ -23,7 +25,18 @@ public class Enemy : MonoBehaviour
         enemyHealth -= damageAmount;
         if (enemyHealth <= 0)
         {
-            Destroy(gameObject);
+            // Generate a random number between 0 and 100
+            int randomNum = Random.Range(0, 101);
+            // If random number is less than a chance
+            if (randomNum < pickUpChance)
+            {
+                // Generate random pick up among available pick ups
+                GameObject randomPickUp = pickUps[Random.Range(0, pickUps.Length)];
+                // Instantiate generated pick up
+                Instantiate(randomPickUp, transform.position, transform.rotation);
+            }
+            // Destroy Enemy object
+            Destroy(this.gameObject);
         }
     }
 }

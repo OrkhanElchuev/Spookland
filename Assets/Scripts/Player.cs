@@ -72,9 +72,12 @@ public class Player : MonoBehaviour
         }
     }
 
+    // Change the weapon to newly picked one
     public void ChangeWeapon(Weapon weaponToEquip)
     {
+        // Destroy currently equipped weapon
         Destroy(GameObject.FindGameObjectWithTag("Weapon"));
+        // Equip new weapon
         Instantiate(weaponToEquip, transform.position, transform.rotation, transform);
     }
 }

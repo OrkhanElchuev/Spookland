@@ -65,7 +65,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ae11eb733450346abb44c6d3985ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
+  projectile: {fileID: 1115949479827592810, guid: 04caac16ddd268f4084be3642e44fdd1,
+    type: 3}
   shootingPoint: {fileID: 1472361794980162142}
   periodBetweenShots: 1
 --- !u!1 &3354834342587199401
