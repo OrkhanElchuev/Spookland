@@ -46,13 +46,13 @@ MonoBehaviour:
   waves:
   - enemies:
     - {fileID: 1738504134, guid: f81780912d1a51f419e4c1faca39157a, type: 3}
-    enemyCount: 2
+    enemyCount: 20
     periodBetweenSpawns: 1
   - enemies:
     - {fileID: 1738504134, guid: f81780912d1a51f419e4c1faca39157a, type: 3}
     - {fileID: 6486696359424794664, guid: f8ddee5bbd451f94ea2cba2e233b9f5f, type: 3}
     enemyCount: 5
-    periodBetweenSpawns: 3
+    periodBetweenSpawns: 1
   spawnPoints:
   - {fileID: 0}
   - {fileID: 0}

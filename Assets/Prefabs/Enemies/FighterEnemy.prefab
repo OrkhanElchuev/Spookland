@@ -609,14 +609,11 @@ MonoBehaviour:
   periodBetweenAttacks: 3
   damageAmount: 1
   player: {fileID: 0}
-  weaponPickUpChance: 20
+  weaponPickUpChance: 15
   pickUps:
   - {fileID: 139998281840564237, guid: 7c94d673a73044b4a89a7dff63761905, type: 3}
   - {fileID: 4319112044959501951, guid: fcca24330209e2448b15bb51a2b86bf1, type: 3}
-  - {fileID: 7693236359452662272, guid: f937c1140adc9fb4588a4da3eae8ee34, type: 3}
-  - {fileID: 3012603006362134241, guid: 99f73af7fc5fc664c8ddddf4fa340775, type: 3}
-  - {fileID: 1779662310952023847, guid: 480845ef9037b4a44ac9ccdd47c65a4f, type: 3}
-  healthPickUpChance: 40
+  healthPickUpChance: 25
   healthPickUp: {fileID: 1779662310952023847, guid: 480845ef9037b4a44ac9ccdd47c65a4f,
     type: 3}
   stopDistance: 10

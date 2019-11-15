@@ -119,6 +119,14 @@ MonoBehaviour:
   periodBetweenAttacks: 4
   damageAmount: 0
   player: {fileID: 0}
+  weaponPickUpChance: 25
+  pickUps:
+  - {fileID: 139998281840564237, guid: 7c94d673a73044b4a89a7dff63761905, type: 3}
+  - {fileID: 4319112044959501951, guid: fcca24330209e2448b15bb51a2b86bf1, type: 3}
+  - {fileID: 7693236359452662272, guid: f937c1140adc9fb4588a4da3eae8ee34, type: 3}
+  healthPickUpChance: 25
+  healthPickUp: {fileID: 1779662310952023847, guid: 480845ef9037b4a44ac9ccdd47c65a4f,
+    type: 3}
   stopDistance: 25
   shotPoint: {fileID: 8617737092174101332}
   flyingEnemyProjectile: {fileID: 2694621990820143138, guid: 260bb4516f5ccda41a1d8a6e54b27497,

@@ -200,6 +200,11 @@ MonoBehaviour:
   periodBetweenAttacks: 0.5
   damageAmount: 1
   player: {fileID: 0}
+  weaponPickUpChance: 0
+  pickUps: []
+  healthPickUpChance: 15
+  healthPickUp: {fileID: 1779662310952023847, guid: 480845ef9037b4a44ac9ccdd47c65a4f,
+    type: 3}
   stopDistance: 6
   attackSpeed: 0.75
 --- !u!1 &8103421208882626168
