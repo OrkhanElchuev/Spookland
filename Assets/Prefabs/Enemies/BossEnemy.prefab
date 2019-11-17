@@ -645,6 +645,7 @@ MonoBehaviour:
   - {fileID: 6498300271539696673, guid: 3602f7b73637f674da83e35958240b3f, type: 3}
   - {fileID: 5591262910301276161, guid: 2dd64f9b58a30284090df982ddd91c67, type: 3}
   spawnOffset: 15
+  bossDamage: 1
 --- !u!61 &1628285177192601611
 BoxCollider2D:
   m_ObjectHideFlags: 0
