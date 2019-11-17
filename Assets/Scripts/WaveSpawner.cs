@@ -16,6 +16,9 @@ public class WaveSpawner : MonoBehaviour
     public Wave[] waves;
     public Transform[] spawnPoints;
     public float periodBetweenWaves;
+    public GameObject bossEnemy;
+    public Transform bossSpawnPoint;
+
 
     // Private
     private Wave currentWave;
@@ -31,7 +34,7 @@ public class WaveSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (finishedSpawning == true && 
+        if (finishedSpawning == true &&
         GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
         {
             finishedSpawning = false;
@@ -42,8 +45,8 @@ public class WaveSpawner : MonoBehaviour
             }
             else
             {
-                // Temporary for testing purposes
-                Debug.Log("Game FInished!");
+                // Spawn boss enemy at last wave
+               Instantiate(bossEnemy, bossSpawnPoint.position, bossSpawnPoint.rotation);
             }
         }
     }
