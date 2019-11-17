@@ -98,7 +98,7 @@ MonoBehaviour:
   projectileSpeed: 30
   explosion: {fileID: 7216029682732620884, guid: 56f83d26a4bcfc749b89f7de6c24a900,
     type: 3}
-  porjectileDamage: 3
+  projectileDamage: 1
 --- !u!61 &-1736730877996500986
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -116,7 +116,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.2090907, y: 4.572727}
+    oldSize: {x: 3.5615385, y: 3.8692307}
     newSize: {x: 1.01, y: 1.78}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

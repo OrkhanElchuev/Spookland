@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour
     public float projectileLifeTime;
     public float projectileSpeed;
     public GameObject explosion;
-    public int porjectileDamage;
+    public int projectileDamage;
 
     private void Start()
     {
@@ -28,7 +28,13 @@ public class Projectile : MonoBehaviour
         if (collision.tag == "Enemy")
         {
             // Deal damage to enemy
-            collision.GetComponent<Enemy>().TakeDamage(porjectileDamage);
+            collision.GetComponent<Enemy>().TakeDamage(projectileDamage);
+            DestroyProjectile();
+        }
+        // Check if item of collision is boss enemy
+        if (collision.tag == "Boss")
+        {
+            collision.GetComponent<Boss>().TakeDamage(projectileDamage);
             DestroyProjectile();
         }
     }

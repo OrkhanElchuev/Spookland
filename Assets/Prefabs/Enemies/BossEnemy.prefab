@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4014656483544415651}
   - component: {fileID: 7781409343135692522}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8274549036709794777}
   - component: {fileID: 2943966956359271213}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BossShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4667634312939216206}
   - component: {fileID: 522563016483027104}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7654498642540443776}
   - component: {fileID: 6993869045408577548}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4111898432504416032}
   - component: {fileID: 8128316091297566917}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,7 +414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1883588334568900133}
   - component: {fileID: 520675509629756155}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -495,7 +495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7771746425747772613}
   - component: {fileID: 7624528007376699237}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -579,9 +579,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5770176164807819626}
   - component: {fileID: 4395942476994653871}
-  m_Layer: 0
+  - component: {fileID: 1964681853645591798}
+  - component: {fileID: 1628285177192601611}
+  - component: {fileID: 851853008}
+  m_Layer: 11
   m_Name: BossEnemy
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -623,3 +626,69 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1964681853645591798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7923996297408942377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a1ae57de6ede9428c29a82098e99a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossHealth: 10
+  enemies:
+  - {fileID: 6486696359424794664, guid: f8ddee5bbd451f94ea2cba2e233b9f5f, type: 3}
+  - {fileID: 1738504134, guid: f81780912d1a51f419e4c1faca39157a, type: 3}
+  - {fileID: 6498300271539696673, guid: 3602f7b73637f674da83e35958240b3f, type: 3}
+  - {fileID: 5591262910301276161, guid: 2dd64f9b58a30284090df982ddd91c67, type: 3}
+  spawnOffset: 15
+--- !u!61 &1628285177192601611
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7923996297408942377}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.42885065, y: 1.5153265}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 14.355639, y: 20.449522}
+  m_EdgeRadius: 0
+--- !u!50 &851853008
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7923996297408942377}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
