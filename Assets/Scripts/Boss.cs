@@ -9,7 +9,8 @@ public class Boss : MonoBehaviour
     public Enemy[] enemies;
     public float spawnOffset;
     public int bossDamage;
-
+    public GameObject bloodEffect;
+    public GameObject deathEffect;
 
     // Private
     private int halfHealth;
@@ -31,12 +32,20 @@ public class Boss : MonoBehaviour
         }
     }
 
+    // Execute death particle effect and create a blood on the game field
+    private void HandleBossDeathEffects()
+    {
+        Instantiate(bloodEffect, transform.position, transform.rotation);
+        Instantiate(deathEffect, transform.position, transform.rotation);
+    }
+
     // Handle damage
     public void TakeDamage(int damageAmount)
-    { 
+    {
         bossHealth -= damageAmount;
         if (bossHealth <= 0)
         {
+            HandleBossDeathEffects();
             Destroy(this.gameObject);
         }
         // In case of reaching half health points trigger chasing behaviour
@@ -44,6 +53,7 @@ public class Boss : MonoBehaviour
         {
             bossAnimator.SetTrigger("FromWalkToRun");
         }
+
         // Choose random enemy
         Enemy randomEnemy = enemies[Random.Range(0, enemies.Length)];
         // Instantiate enemy away from boss using offset

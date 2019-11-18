@@ -30,7 +30,8 @@ public class Enemy : MonoBehaviour
         {
             InstantiateWeaponPickUp();
             InstantiateHealthPickUp();
-            HandleEnemyDeathEffects();
+            // Execute death effect
+            Instantiate(deathEffect, transform.position, transform.rotation);
             // Destroy Enemy object
             Destroy(this.gameObject);
         }
