@@ -80,6 +80,7 @@ MonoBehaviour:
     type: 3}
   emptyHeart: {fileID: 2123032796952160724, guid: 80e4073ae6b90fe47b25ecaa312f5d3e,
     type: 3}
+  panelHurtEffect: {fileID: 0}
 --- !u!50 &8053159013570474126
 Rigidbody2D:
   serializedVersion: 4

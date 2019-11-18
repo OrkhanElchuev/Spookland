@@ -168,6 +168,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4017486788326129264}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &194705126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3634142880550164149, guid: 2c8d01e3897984147bd4117c6f45de4d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3634142880995520201}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &194705127
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194705126}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf293d1c5a6910d418cae2411bfb682b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &215469344
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,6 +248,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1762536244292566212, guid: 16295eade4d0d4149bd306fb2d481d1e,
     type: 3}
   m_PrefabInstance: {fileID: 4017486788326129264}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &354033087 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 354033087, guid: 30dd4b1da8959924f9ceffbf8b7adcfb,
+    type: 3}
+  m_PrefabInstance: {fileID: 276669669355023526}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &379401636 stripped
 Transform:
@@ -672,6 +703,11 @@ PrefabInstance:
       propertyPath: hearts.Array.data[4]
       value: 
       objectReference: {fileID: 276669669355023527}
+    - target: {fileID: 5327670698941340497, guid: c03e46cd719731240a3bca28e1e80d3d,
+        type: 3}
+      propertyPath: panelHurtEffect
+      value: 
+      objectReference: {fileID: 354033087}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c03e46cd719731240a3bca28e1e80d3d, type: 3}
 --- !u!4 &278323545249203688 stripped
@@ -815,6 +851,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3634142880550164150, guid: 2c8d01e3897984147bd4117c6f45de4d,
+        type: 3}
+      propertyPath: orthographic size
+      value: 28.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c8d01e3897984147bd4117c6f45de4d, type: 3}

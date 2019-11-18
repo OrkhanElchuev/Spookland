@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
     public float projectileSpeed;
     public GameObject explosion;
     public int projectileDamage;
-
+    
     private void Start()
     {
         // Call function after a delay

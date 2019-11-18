@@ -11,6 +11,12 @@ public class Weapon : MonoBehaviour
 
     // Private
     private float shootingTime;
+    private Animator cameraAnimator;
+
+    private void Start()
+    {
+        cameraAnimator = Camera.main.GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -42,6 +48,7 @@ public class Weapon : MonoBehaviour
             {
                 // Create a projectile
                 Instantiate(projectile, shootingPoint.position, transform.rotation);
+                cameraAnimator.SetTrigger("Shake");
                 shootingTime = Time.time + periodBetweenShots;
             }
         }

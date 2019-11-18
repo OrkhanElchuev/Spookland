@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
-
+    public Animator panelHurtEffect;
 
     // Private
     private Rigidbody2D playerRigidBody;
@@ -73,6 +73,7 @@ public class Player : MonoBehaviour
     {
         playerHealth -= damageAmount;
         UpdateHealthUI(playerHealth);
+        panelHurtEffect.SetTrigger("Hurt");
         if (playerHealth <= 0)
         {
             Destroy(gameObject);
