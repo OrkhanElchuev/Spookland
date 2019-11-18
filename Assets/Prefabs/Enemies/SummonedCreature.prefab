@@ -201,9 +201,11 @@ MonoBehaviour:
   damageAmount: 1
   player: {fileID: 0}
   weaponPickUpChance: 0
-  pickUps: []
   healthPickUpChance: 15
+  pickUps: []
   healthPickUp: {fileID: 1779662310952023847, guid: 480845ef9037b4a44ac9ccdd47c65a4f,
+    type: 3}
+  deathEffect: {fileID: 7216029682732620884, guid: 39d5b269df4284841801e570b1d2914f,
     type: 3}
   stopDistance: 6
   attackSpeed: 0.75

@@ -12,9 +12,10 @@ public class Enemy : MonoBehaviour
     [HideInInspector]
     public Transform player;
     public int weaponPickUpChance;
-    public GameObject[] pickUps;
     public int healthPickUpChance;
+    public GameObject[] pickUps;
     public GameObject healthPickUp;
+    public GameObject deathEffect;
 
     public virtual void Start()
     {
@@ -29,6 +30,8 @@ public class Enemy : MonoBehaviour
         {
             InstantiateWeaponPickUp();
             InstantiateHealthPickUp();
+            // Execute death particle effect
+            Instantiate(deathEffect, transform.position, transform.rotation);
             // Destroy Enemy object
             Destroy(this.gameObject);
         }
