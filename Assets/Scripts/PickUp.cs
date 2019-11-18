@@ -6,6 +6,7 @@ public class PickUp : MonoBehaviour
 {
     // Public
     public Weapon weaponToEquip;
+    public GameObject pickupEffect;
 
     // Handle collision 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -13,6 +14,7 @@ public class PickUp : MonoBehaviour
         // Check if colliding object is player
         if (collision.tag == "Player")
         {
+            Instantiate(pickupEffect, transform.position, transform.rotation);
             // Equip the new weapon to player
             collision.GetComponent<Player>().ChangeWeapon(weaponToEquip);
             // Destroy weapon on ground

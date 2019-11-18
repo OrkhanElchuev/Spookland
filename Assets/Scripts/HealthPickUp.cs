@@ -6,7 +6,8 @@ public class HealthPickUp : MonoBehaviour
 {
     // Public
     public int healingAmount;
-
+    public GameObject pickupEffect;
+   
     Player playerScript;
 
     private void Start()
@@ -20,6 +21,7 @@ public class HealthPickUp : MonoBehaviour
         // Check if collision object is player
         if (collision.tag == "Player")
         {
+            Instantiate(pickupEffect, transform.position, transform.rotation);
             playerScript.IncreaseHealth(healingAmount);
             // Destroy health pick up
             Destroy(gameObject);

@@ -207,6 +207,8 @@ MonoBehaviour:
     type: 3}
   deathEffect: {fileID: 7216029682732620884, guid: 39d5b269df4284841801e570b1d2914f,
     type: 3}
+  enemyBlood: {fileID: 1608321500658106543, guid: 651079c8c6125b944a15106c0991dea9,
+    type: 3}
   stopDistance: 6
   attackSpeed: 0.75
 --- !u!1 &8103421208882626168

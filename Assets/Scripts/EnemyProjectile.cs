@@ -7,6 +7,7 @@ public class EnemyProjectile : MonoBehaviour
     // Public
     public float projectileSpeed;
     public int damage;
+    public GameObject destroyEffect;
 
     // Private
     private Player playerScript;
@@ -28,16 +29,17 @@ public class EnemyProjectile : MonoBehaviour
     private void MoveProjectile()
     {
         // Check the distance between projectile and player
-        if (Vector2.Distance(transform.position, targetPosition) > 0.2f)
+        if ((Vector2)transform.position == targetPosition)
         {
-            // If distance between projectile and player is (> 0.2) continue moving towards player
+            Instantiate(destroyEffect, transform.position, Quaternion.identity);
+            // Destroy projectile
+            Destroy(gameObject);
+        } 
+        else 
+        {
+            // If distance between projectile and player is not equal continue moving towards player
             transform.position = Vector2.MoveTowards(transform.position, targetPosition,
              projectileSpeed * Time.deltaTime);
-        }
-        else
-        {
-            // Otherwise destroy projectile 
-            Destroy(gameObject);
         }
     }
 

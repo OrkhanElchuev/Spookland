@@ -96,6 +96,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponToEquip: {fileID: 1367403758832282683, guid: 56cf996fc6a10f641ad4fb1530c4b075,
     type: 3}
+  pickupEffect: {fileID: 7216029682732620884, guid: c1b36d3c56f2eba4d80605dbad582953,
+    type: 3}
 --- !u!61 &3012603006362134243
 BoxCollider2D:
   m_ObjectHideFlags: 0

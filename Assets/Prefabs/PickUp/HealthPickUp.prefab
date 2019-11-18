@@ -122,3 +122,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healingAmount: 1
+  pickupEffect: {fileID: 7216029682732620884, guid: c1b36d3c56f2eba4d80605dbad582953,
+    type: 3}
