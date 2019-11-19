@@ -37,12 +37,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    // Execute death particle effect
-    private void HandleEnemyDeathEffects()
-    {
-        Instantiate(deathEffect, transform.position, transform.rotation);
-    }
-
     private void InstantiateWeaponPickUp()
     {
         // Generate a random number between 0 and 100
