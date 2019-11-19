@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
@@ -15,11 +16,23 @@ public class Boss : MonoBehaviour
     // Private
     private int halfHealth;
     private Animator bossAnimator;
+    private Slider bossHealthBar;
 
     private void Start()
     {
         halfHealth = bossHealth / 2;
         bossAnimator = GetComponent<Animator>();
+        HandleBossHealthBar();
+    }
+
+    // Handle the configurations of Boss health bar
+    private void HandleBossHealthBar()
+    {
+        bossHealthBar = FindObjectOfType<Slider>();
+        // Set the max value to Boss health
+        bossHealthBar.maxValue = bossHealth;
+        // set the initial value to Boss health
+        bossHealthBar.value = bossHealth;
     }
 
     // Handle collision of boss with player
@@ -43,10 +56,14 @@ public class Boss : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         bossHealth -= damageAmount;
+        // Update health bar each time damage is taken
+        bossHealthBar.value = bossHealth;
         if (bossHealth <= 0)
         {
             HandleBossDeathEffects();
             Destroy(this.gameObject);
+            // Hide the health bar when the boss is dead
+            bossHealthBar.gameObject.SetActive(false);
         }
         // In case of reaching half health points trigger chasing behaviour
         if (bossHealth <= halfHealth)

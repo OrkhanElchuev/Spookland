@@ -68,3 +68,4 @@ MonoBehaviour:
     type: 3}
   bossSpawnPoint: {fileID: 5291978181132483093, guid: 4b230764d837ff94db2314827072d6be,
     type: 3}
+  bossHealthBar: {fileID: 0}
