@@ -20,17 +20,19 @@ public class PauseMenu : MonoBehaviour
     // When escape key pressed, pause or resume the game
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (GameIsPaused)
         {
-            if (GameIsPaused)
-            {
-                ResumeGame();
-            }
-            else
-            {
-                PauseGame();
-            }
+            PauseGame();
         }
+        else
+        {
+            ResumeGame();
+        }
+    }
+
+    public void OnPause()
+    {
+        GameIsPaused = true;
     }
 
     public void ResumeGame()
@@ -45,8 +47,17 @@ public class PauseMenu : MonoBehaviour
     // Load main menu and resume the game flow
     public void LoadStartMenu()
     {
+        GameIsPaused = false;
         Time.timeScale = 1.0f;
         sceneFade.LoadScene("MainMenu");
+    }
+
+    // Replay the game
+    public void Retry()
+    {
+        GameIsPaused = false;
+        Time.timeScale = 1.0f;
+        sceneFade.LoadScene("GamePlay");
     }
 
     private void PauseGame()

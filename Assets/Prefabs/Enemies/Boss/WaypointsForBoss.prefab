@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3781248915292227255}
   m_Layer: 0
   m_Name: WaypointsBoss (2)
-  m_TagString: Untagged
+  m_TagString: Waypoints
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 7834351037287566366}
   m_Layer: 0
   m_Name: WaypointsBoss (1)
-  m_TagString: Untagged
+  m_TagString: Waypoints
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 5731852515710664905}
   m_Layer: 0
   m_Name: WaypointsBoss (9)
-  m_TagString: Untagged
+  m_TagString: Waypoints
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 5378694124115721848}
   m_Layer: 0
   m_Name: WaypointsBoss (8)
-  m_TagString: Untagged
+  m_TagString: Waypoints
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 1303067490616175922}
   m_Layer: 0
   m_Name: WaypointsBoss (5)
-  m_TagString: Untagged
+  m_TagString: Waypoints
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 3991275672908121904}
   m_Layer: 0
   m_Name: WaypointsBoss (6)
-  m_TagString: Untagged
+  m_TagString: Waypoints
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 3251429333563364884}
   m_Layer: 0
   m_Name: WaypointsBoss (7)
-  m_TagString: Untagged
+  m_TagString: Waypoints
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 4640592462978655639}
   m_Layer: 0
   m_Name: WaypointsBoss (4)
-  m_TagString: Untagged
+  m_TagString: Waypoints
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 3991828464802551739}
   m_Layer: 0
   m_Name: WaypointsBoss (10)
-  m_TagString: Untagged
+  m_TagString: Waypoints
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 404458581532943445}
   m_Layer: 0
   m_Name: WaypointsBoss (3)
-  m_TagString: Untagged
+  m_TagString: Waypoints
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 4527931651302820361}
   m_Layer: 0
   m_Name: WaypointsBoss
-  m_TagString: Untagged
+  m_TagString: Waypoints
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
