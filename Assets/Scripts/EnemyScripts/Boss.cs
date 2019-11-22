@@ -17,12 +17,14 @@ public class Boss : MonoBehaviour
     private int halfHealth;
     private Animator bossAnimator;
     private Slider bossHealthBar;
+    private SceneFadeTransition sceneFadeTransition;
 
     private void Start()
     {
         halfHealth = bossHealth / 2;
         bossAnimator = GetComponent<Animator>();
         HandleBossHealthBar();
+        sceneFadeTransition = FindObjectOfType<SceneFadeTransition>();
     }
 
     // Handle the configurations of Boss health bar
@@ -64,6 +66,8 @@ public class Boss : MonoBehaviour
             Destroy(this.gameObject);
             // Hide the health bar when the boss is dead
             bossHealthBar.gameObject.SetActive(false);
+            // When final boss is dead, load Game Won scene
+            sceneFadeTransition.LoadScene("GameWon");
         }
         // In case of reaching half health points trigger chasing behaviour
         if (bossHealth <= halfHealth)

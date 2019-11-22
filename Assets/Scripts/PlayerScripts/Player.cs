@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     private Animator animator;
     private Vector2 movingAmount;
     private int maxHealth = 5;
+    private SceneFadeTransition sceneFadeTransition;
 
 
     private void Start()
@@ -66,6 +67,7 @@ public class Player : MonoBehaviour
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        sceneFadeTransition = FindObjectOfType<SceneFadeTransition>();
     }
 
     // Handle damage and destroy player
@@ -77,6 +79,8 @@ public class Player : MonoBehaviour
         if (playerHealth <= 0)
         {
             Destroy(gameObject);
+            // When player is dead, load Game Lost scene
+            sceneFadeTransition.LoadScene("GameLost");
         }
     }
 
