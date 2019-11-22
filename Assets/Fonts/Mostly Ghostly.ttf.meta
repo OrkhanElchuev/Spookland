@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d2d7ef868162290499c91fef4473c212
+guid: 0e521bd212488b2449d05387c398e8b9
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Comica Regular
+  fontName: Mostly Ghostly
   fontNames:
-  - Comica Regular
+  - Mostly Ghostly
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
