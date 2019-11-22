@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3000152105484091910}
   - component: {fileID: 666527649890580403}
   - component: {fileID: 61316958592921693}
+  - component: {fileID: 7680487837254543994}
   m_Layer: 0
   m_Name: TransitionPanel
   m_TagString: Untagged
@@ -35,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.5999756, y: -2.7999878}
+  m_AnchoredPosition: {x: 2.5998535, y: -2.8000488}
   m_SizeDelta: {x: 603.6, y: 392.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3000152105484091910
@@ -59,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.60784316}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -93,6 +94,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7680487837254543994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234695221125343411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f45ec31b685fa49817d534ab65913b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1873152518501952486
 GameObject:
   m_ObjectHideFlags: 0
