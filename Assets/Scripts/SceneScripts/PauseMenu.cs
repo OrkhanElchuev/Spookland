@@ -9,7 +9,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
 
-    // Private
+    // Private 
     private SceneFadeTransition sceneFade;
 
     private void Start()
@@ -42,7 +42,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
     }
 
-    // Load start menu and resume the game flow
+    // Load main menu and resume the game flow
     public void LoadStartMenu()
     {
         Time.timeScale = 1.0f;
