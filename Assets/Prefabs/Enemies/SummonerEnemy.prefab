@@ -280,12 +280,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b88b6404e811964cb1eadbf7bcffb39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 2
+  enemyHealth: 6
   enemySpeed: 20
   periodBetweenAttacks: 2
   damageAmount: 1
   player: {fileID: 0}
-  weaponPickUpChance: 35
+  weaponPickUpChance: 100
   healthPickUpChance: 35
   pickUps:
   - {fileID: 139998281840564237, guid: 7c94d673a73044b4a89a7dff63761905, type: 3}

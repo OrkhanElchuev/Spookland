@@ -93,11 +93,12 @@ public class SummonerEnemy : Enemy
     // Summon enemy creature
     public void SummonCreature()
     {
+        var padding = new Vector3(0,4,0);
         // Check if player exists
         if (player != null)
         {
             // Create creature in position of Summoner
-            Instantiate(creatureToSummon, transform.position, transform.rotation);
+            Instantiate(creatureToSummon, transform.position + padding, transform.rotation);
         }
     }
 

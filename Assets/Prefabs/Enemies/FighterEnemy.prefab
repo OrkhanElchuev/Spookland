@@ -605,7 +605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 3
-  enemySpeed: 30
+  enemySpeed: 25
   periodBetweenAttacks: 3
   damageAmount: 1
   player: {fileID: 0}
@@ -617,8 +617,6 @@ MonoBehaviour:
   healthPickUp: {fileID: 1779662310952023847, guid: 480845ef9037b4a44ac9ccdd47c65a4f,
     type: 3}
   deathEffect: {fileID: 7216029682732620884, guid: 39d5b269df4284841801e570b1d2914f,
-    type: 3}
-  enemyBlood: {fileID: 1608321500658106543, guid: 651079c8c6125b944a15106c0991dea9,
     type: 3}
   stopDistance: 10
   attackSpeed: 8

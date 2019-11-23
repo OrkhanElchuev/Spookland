@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6970751768233462583}
   - component: {fileID: 2177377038100077273}
   - component: {fileID: -1736730877996500986}
+  - component: {fileID: 764712279535262940}
   m_Layer: 0
   m_Name: ProjectileLvl3
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115949479827592810}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4804153, y: 0.9866198, z: 0}
+  m_LocalPosition: {x: 1.480415, y: 0.9866198, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,11 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f765a1c3ce7824795e812fdd465b27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileLifeTime: 1
+  projectileLifeTime: 2
   projectileSpeed: 30
   explosion: {fileID: 7216029682732620884, guid: 56f83d26a4bcfc749b89f7de6c24a900,
     type: 3}
-  projectileDamage: 1
+  projectileDamage: 2
 --- !u!61 &-1736730877996500986
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -125,3 +126,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4047618, y: 4.07401}
   m_EdgeRadius: 0
+--- !u!95 &764712279535262940
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115949479827592810}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5340f2d3d5cffc3428263acd2a943e2f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

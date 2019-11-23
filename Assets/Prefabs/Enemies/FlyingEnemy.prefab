@@ -114,9 +114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3d973c426a6917428eb50e514c5ebf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 3
-  enemySpeed: 17
-  periodBetweenAttacks: 4
+  enemyHealth: 5
+  enemySpeed: 30
+  periodBetweenAttacks: 3.5
   damageAmount: 0
   player: {fileID: 0}
   weaponPickUpChance: 25
