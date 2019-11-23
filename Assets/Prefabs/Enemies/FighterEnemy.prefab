@@ -605,7 +605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 6
-  enemySpeed: 25
+  enemySpeed: 17
   periodBetweenAttacks: 3
   damageAmount: 1
   player: {fileID: 0}

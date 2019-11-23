@@ -1186,17 +1186,6 @@ PrefabInstance:
       propertyPath: bossHealthBar
       value: 
       objectReference: {fileID: 852169095}
-    - target: {fileID: 5191213433968598729, guid: 31a7c2519aa0f3f4aa0094c2ce4bfe8f,
-        type: 3}
-      propertyPath: waves.Array.data[0].enemyCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5191213433968598729, guid: 31a7c2519aa0f3f4aa0094c2ce4bfe8f,
-        type: 3}
-      propertyPath: waves.Array.data[0].enemies.Array.data[0]
-      value: 
-      objectReference: {fileID: 6486696359424794664, guid: f8ddee5bbd451f94ea2cba2e233b9f5f,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31a7c2519aa0f3f4aa0094c2ce4bfe8f, type: 3}
 --- !u!1001 &5486464648214498802
