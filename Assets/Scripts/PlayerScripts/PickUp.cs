@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
+    // Private
+    private float pickUpLifeTime = 15f;
+
     // Public
     public Weapon weaponToEquip;
     public GameObject pickupEffect;
+
+    private void Start()
+    {
+        DestroyItself();
+    }
 
     // Handle collision 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -20,5 +28,17 @@ public class PickUp : MonoBehaviour
             // Destroy weapon on ground
             Destroy(gameObject);
         }
+    }
+
+    private void DestroyItself()
+    {
+        StartCoroutine(DestroyWithDelay());
+    }
+
+    // Destroy unpicked weapon after a delay
+    IEnumerator DestroyWithDelay()
+    {
+        yield return new WaitForSeconds(pickUpLifeTime);
+        Destroy(gameObject);
     }
 }
