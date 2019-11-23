@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class HealthPickUp : MonoBehaviour
 {
+    // Private
+    private float pickUpLifeTime = 10f;
+
     // Public
     public int healingAmount;
     public GameObject pickupEffect;
-   
+
     Player playerScript;
 
     private void Start()
     {
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        DestroyItself();
     }
 
     // Handle collision of player with health pick up
@@ -26,5 +30,17 @@ public class HealthPickUp : MonoBehaviour
             // Destroy health pick up
             Destroy(gameObject);
         }
+    }
+
+    private void DestroyItself()
+    {
+        StartCoroutine(DestroyWithDelay());
+    }
+
+    // Destroy unpicked health points after a delay
+    IEnumerator DestroyWithDelay()
+    {
+        yield return new WaitForSeconds(pickUpLifeTime);
+        Destroy(gameObject);
     }
 }
