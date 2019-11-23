@@ -628,6 +628,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1799496520364377253, guid: c03e46cd719731240a3bca28e1e80d3d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.68854475
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799496520364377253, guid: c03e46cd719731240a3bca28e1e80d3d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.68854475
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799496520364377253, guid: c03e46cd719731240a3bca28e1e80d3d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.68854475
+      objectReference: {fileID: 0}
     - target: {fileID: 5327670698941340497, guid: c03e46cd719731240a3bca28e1e80d3d,
         type: 3}
       propertyPath: hearts.Array.data[0]
@@ -1338,6 +1353,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150448136623669151, guid: 1254f3e42f6540c44b3975851eafa34a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.47975087
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150448136623669151, guid: 1254f3e42f6540c44b3975851eafa34a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.47975087
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150448136623669151, guid: 1254f3e42f6540c44b3975851eafa34a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.47975087
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1254f3e42f6540c44b3975851eafa34a, type: 3}

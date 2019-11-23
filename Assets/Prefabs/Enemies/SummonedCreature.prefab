@@ -111,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 3283514161357151970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75009, y: 0.75009, z: 0.75009}
   m_Children:
   - {fileID: 5848868776631168798}
   m_Father: {fileID: 0}
@@ -206,8 +206,6 @@ MonoBehaviour:
   healthPickUp: {fileID: 1779662310952023847, guid: 480845ef9037b4a44ac9ccdd47c65a4f,
     type: 3}
   deathEffect: {fileID: 7216029682732620884, guid: 39d5b269df4284841801e570b1d2914f,
-    type: 3}
-  enemyBlood: {fileID: 1608321500658106543, guid: 651079c8c6125b944a15106c0991dea9,
     type: 3}
   stopDistance: 6
   attackSpeed: 0.75
