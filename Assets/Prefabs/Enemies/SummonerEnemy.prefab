@@ -286,7 +286,7 @@ MonoBehaviour:
   damageAmount: 1
   player: {fileID: 0}
   weaponPickUpChance: 35
-  healthPickUpChance: 35
+  healthPickUpChance: 30
   pickUps:
   - {fileID: 139998281840564237, guid: 7c94d673a73044b4a89a7dff63761905, type: 3}
   - {fileID: 4319112044959501951, guid: fcca24330209e2448b15bb51a2b86bf1, type: 3}

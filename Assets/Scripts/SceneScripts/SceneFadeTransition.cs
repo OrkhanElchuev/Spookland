@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneFadeTransition : MonoBehaviour
 {
-    // Private
     private Animator transitionAnimation;
 
     private void Start()
@@ -25,6 +24,7 @@ public class SceneFadeTransition : MonoBehaviour
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(sceneName);
     }
+
 
     // Quit the application 
     public void Quit()
