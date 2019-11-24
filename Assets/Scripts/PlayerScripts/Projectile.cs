@@ -9,11 +9,14 @@ public class Projectile : MonoBehaviour
     public float projectileSpeed;
     public GameObject explosion;
     public int projectileDamage;
+    public GameObject projectileSoundEffect;
     
     private void Start()
     {
         // Call function after a delay
         Invoke("DestroyProjectile", projectileLifeTime);
+        // Play the shooting sound effect when projectile is created
+        Instantiate(projectileSoundEffect, transform.position, transform.rotation);
     }
 
     private void Update()
