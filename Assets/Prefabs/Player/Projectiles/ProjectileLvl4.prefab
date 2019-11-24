@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6970751768233462583}
   - component: {fileID: 2177377038100077273}
   - component: {fileID: -1736730877996500986}
-  - component: {fileID: 6268360189789675956}
+  - component: {fileID: 3694778929874101403}
   m_Layer: 0
-  m_Name: ProjectileLvl1
+  m_Name: ProjectileLvl4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115949479827592810}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.4804153, y: 0.9866198, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 6776d1bf396eb19458d5491a9fc24cc3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 26c9dafe806443940b254f774edb2b19, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,11 +96,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileLifeTime: 1.5
-  projectileSpeed: 45
-  explosion: {fileID: 7216029682732620884, guid: 56f83d26a4bcfc749b89f7de6c24a900,
+  projectileSpeed: 30
+  projectileDamage: 1
+  projectileSoundEffect: {fileID: 819692634640170811, guid: 416be1ebc31e3c24281c2ef53e5d06eb,
     type: 3}
-  projectileDamage: 2
-  projectileSoundEffect: {fileID: 819692634640170811, guid: e7ec103e9ef21b946912873119f1c7c0,
+  explosion: {fileID: 7216029682732620884, guid: 9672b986c0988ec47b0e4207d15098a7,
+    type: 3}
+  shootingEffect: {fileID: 7216029682732620884, guid: 3106032efd140ea4696baf0491897c1c,
     type: 3}
 --- !u!61 &-1736730877996500986
 BoxCollider2D:
@@ -119,7 +121,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.525, y: 4.45}
+    oldSize: {x: 3.65, y: 3.9333334}
     newSize: {x: 1.01, y: 1.78}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -128,7 +130,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4047618, y: 4.07401}
   m_EdgeRadius: 0
---- !u!95 &6268360189789675956
+--- !u!95 &3694778929874101403
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -138,7 +140,7 @@ Animator:
   m_GameObject: {fileID: 1115949479827592810}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 59d363e0b2caef545ad582ab885dc766, type: 2}
+  m_Controller: {fileID: 9100000, guid: c71460d970e45894d9e20626bf7c66c9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

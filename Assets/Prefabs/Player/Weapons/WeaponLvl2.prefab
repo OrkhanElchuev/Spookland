@@ -70,6 +70,7 @@ MonoBehaviour:
     type: 3}
   shootingPoint: {fileID: 4223875777544356814}
   periodBetweenShots: 0.2
+  projectileAmount: 300
 --- !u!1 &3015625442268485363
 GameObject:
   m_ObjectHideFlags: 0

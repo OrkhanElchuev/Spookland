@@ -179,3 +179,4 @@ MonoBehaviour:
     type: 3}
   shootingPoint: {fileID: 1102588454173101507}
   periodBetweenShots: 0.45
+  projectileAmount: 5000

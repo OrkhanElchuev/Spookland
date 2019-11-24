@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthPickUp : MonoBehaviour
 {
     // Private
-    private float pickUpLifeTime = 10f;
+    private float pickUpLifeTime = 20f;
 
     // Public
     public int healingAmount;

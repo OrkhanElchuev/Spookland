@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9079321336555005938}
   - component: {fileID: -1476705674678818073}
   m_Layer: 0
-  m_Name: Projectile2Sound
+  m_Name: Projectile4Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,9 +45,9 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: a167a1799497d714d97e680657710294, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.017
-  m_Pitch: 1.5
+  m_Pitch: 0.29
   Loop: 0
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
