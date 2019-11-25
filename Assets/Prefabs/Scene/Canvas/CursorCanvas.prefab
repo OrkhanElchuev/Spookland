@@ -106,7 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f45ec31b685fa49817d534ab65913b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundMusic: {fileID: 0}
 --- !u!1 &1873152518501952486
 GameObject:
   m_ObjectHideFlags: 0
