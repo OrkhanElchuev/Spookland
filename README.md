@@ -5,7 +5,7 @@ Try and see now!
 ## Screenshots
 ![](Images/MainMenu.png)
 ![](Images/GamePlay.png)
-## To Play the Game
+## To Play the Game 
 If you want to play the game on your browser, please visit [Spookland](https://orkhan.itch.io/spookland)
 It is a desktop game and controllers are not adjsted for mobile gaming, so make sure to open on a PC or Laptop.
 ## Tools used while developing this project
@@ -14,6 +14,7 @@ It is a desktop game and controllers are not adjsted for mobile gaming, so make 
 - GitBash.
 - Inno Setup Compiler (For creating installer files)
 - Photoshop (For drawing some of the assets)
+## How to install?
 ### For Windows User
 - Open Folder Named "Game" in Spookland repository.
 - Proceed to Windows Folder.
