@@ -31,6 +31,6 @@ It is a desktop game and controllers are not adjsted for mobile gaming, so make 
 ## Contacts 
 - E-mail address orkhan.elchuev@gmail.com
 - https://github.com/OrkhanElchuev/Spookland
-## Aknowledgements
+## Acknowledgements
 - [dafont](https://www.dafont.com/de/)
 - [LunaPic](https://www6.lunapic.com/editor/)
